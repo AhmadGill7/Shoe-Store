@@ -7,9 +7,7 @@ const User = require("../../../DB/Models/User");
 const Adds = require("../../../DB/Models/adds");
 const multer = require("multer");
 const fs = require("fs");
-const stripe = require("stripe")(
-  "sk_test_51PRTCcKV8v1ChEJC3q2Al2LZkZjBRrXnFbbEJ38tHd4QvDeHWaJKn15v1FWW3Di8CF3EJmuUJ91xBk9s4dd9w33Q00u0ryYpOL"
-);
+const stripe = require("stripe")(process.env.REACT_APP_STRIPE_SECRET_KEY)  ;
 
 const myApp = express();
 
