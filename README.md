@@ -1,6 +1,5 @@
-## This is an Expense Tracking Application
+# Ecom Site (Shoe Store)
 
-# it keeps track of User's Expense and Income for Optimizing the regular expenses and better financial planning
+ I maded this App using React, Redux Toolkit, Express, Node.js, Mongodb, Multer, Stripe Payment Gateway, Resi API, Axios and JWT. 
 
-
-
+Surge Link : []()
