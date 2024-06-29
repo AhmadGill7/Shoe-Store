@@ -29,7 +29,7 @@ export default function Register() {
         toast.error("Password doesn't match");
         return;
       }
-      console.log(authDetails);
+      // console.log(authDetails);
       const res = await axios.post("/register", authDetails);
       console.log(res.data);
       toast.success(res.data.msg);
