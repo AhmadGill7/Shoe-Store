@@ -41,7 +41,7 @@ export default function Cart({ userLoggedIn }) {
 
   const handleCheckout = async () => {
     if (userLoggedIn) {
-      const stripe = await loadStripe(REACT_APP_STRIPE_PRIVATE_KEY);
+      const stripe = await loadStripe(process.env.REACT_APP_STRIPE_PRIVATE_KEY);
       const response = await axios.post(`/create-checkout-session`, cart);
 
       const result = stripe.redirectToCheckout({
